@@ -11,3 +11,6 @@ package.jsonに記している。
 
 <!-- アップロード -->
 ・firebase deployを使用しているため、ルールに則った処理でデプロイをすること。
+
+<!-- 注意 -->
+・Firebase deployとGitHub deploy両方行うこと。
