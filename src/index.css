@@ -87,9 +87,72 @@ button {
   margin-top: 100px;
   margin-bottom: 30px;
 }
+
 /* ボタンホバー */
 button:hover {
   background-color: #666;
   cursor: pointer;
   opacity: 0.7;
+}
+
+/* タブレット用 */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .container h1 {
+    font-size: 1.5em;
+  }
+
+  form {
+    font-size: 0.9em;
+  }
+
+  .container p {
+    font-size: 0.9em;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .container {
+    width: 95%;
+    margin: 30px auto;
+    row-gap: 20px;
+  }
+
+  .container h1 {
+    font-size: 1.2em;
+  }
+
+  form {
+    font-size: 0.8em;
+  }
+
+  .container p {
+    font-size: 0.8em;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 12px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    padding: 8px;
+  }
 }
