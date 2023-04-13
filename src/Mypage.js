@@ -25,7 +25,7 @@ const Mypage = () => {
             setError("画像が存在しません。");
           }
           // setTime 500
-        }, 500);
+        }, 1000);
       }
     });
   }, [auth, storage]);

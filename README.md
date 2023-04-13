@@ -4,6 +4,7 @@
 ・メール・パスワードはAuthで認証機能を持っています。
 ・入力されたメール、パスワードはcloud firestoreへデータ格納
 ・登録された画像に関しては、storageへ格納される。
+・BrowserRouterを使用して、SPAとする。
 
 <!-- 実際の起動 -->
 ・デフォルトの画面がhttps://react-firebase-192b5.web.app/register/に繋がるように
