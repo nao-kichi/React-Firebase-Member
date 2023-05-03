@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { onAuthStateChanged, reload, signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth, storage } from "./FirebaseConfig.js";
 import { useNavigate, Navigate } from "react-router-dom";
 import { getDownloadURL, ref } from "firebase/storage";
@@ -25,7 +25,7 @@ const Mypage = () => {
             setError("画像が存在しません。");
           }
           // setTime 500
-        }, 1000);
+        }, 1500);
       }
     });
   }, [auth, storage]);

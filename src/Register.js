@@ -34,8 +34,10 @@ const Register = () => {
             // ユーザーUIDに基づいて画像を保存
             if (registerImage) {
                 const storageRef = ref(storage, `user_images/${userCredential.user.uid}.jpg`);
-                await uploadBytes(storageRef, registerImage);
-            }
+                setTimeout(async () => {
+                  await uploadBytes(storageRef, registerImage);
+                }, 1000); // setTimeout
+              }
         } catch (error) {
             alert("正しく入力してください");
         }
