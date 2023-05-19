@@ -2,8 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-import { doc, getDoc } from "firebase/firestore";
-
 
 // 本番環境モード
 const firebaseConfig = {
