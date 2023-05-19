@@ -47,6 +47,12 @@ input {
   border-radius: 0;
 }
 
+/* 住所検索ボタン */
+button[name="searchButton"] {
+  width: 100%;
+  margin-top: 20px;
+}
+
 /* 画像選択フォーム */
 input[type="file"] {
   width: 100%;
