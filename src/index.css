@@ -3,13 +3,11 @@
   padding: 0;
 }
 
-/* 背景 */
 body {
   font-family: sans-serif;
   background-color: #000000;
 }
 
-/* 各ファイルの設定 App.jsに記載  */
 .container {
   display: grid;
   row-gap: 30px;
@@ -18,7 +16,6 @@ body {
   margin: 60px auto;
 }
 
-/* 新規登録・ログインページのタイトル位置 */
 .container h1 {
   font-size: 2em;
   font-weight: bold;
@@ -26,7 +23,6 @@ body {
   justify-self: center;
 }
 
-/* 入力フォーム */
 form {
   font-size: 1em;
   font-weight: bold;
@@ -35,7 +31,6 @@ form {
   row-gap: 10px;
 }
 
-/* 入力フォーム */
 input {
   width: 100%;
   box-sizing: border-box;
@@ -47,13 +42,11 @@ input {
   border-radius: 0;
 }
 
-/* 住所検索ボタン */
 button[name="searchButton"] {
   width: 100%;
   margin-top: 20px;
 }
 
-/* 画像選択フォーム */
 input[type="file"] {
   width: 100%;
   box-sizing: border-box;
@@ -66,7 +59,6 @@ input[type="file"] {
   border-radius: 0;
 }
 
-/* ボタン下メッセージ */
 .container p {
   font-size: 1em;
   font-weight: bold;
@@ -74,14 +66,12 @@ input[type="file"] {
   justify-self: center;
 }
 
-/* ボタン下メッセージ 「こちら」 */
 a {
   font-size: 30px;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-/* 登録する・ログインボタン */
 button {
   justify-self: center;
   border: none;
@@ -94,14 +84,12 @@ button {
   margin-bottom: 30px;
 }
 
-/* ボタンホバー */
 button:hover {
   background-color: #666;
   cursor: pointer;
   opacity: 0.7;
 }
 
-/* タブレット用 */
 @media only screen and (max-width: 1024px) {
   .container {
     width: 90%;

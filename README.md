@@ -15,3 +15,5 @@ package.jsonに記している。
 
 <!-- 注意 -->
 ・Firebase deployとGitHub deploy両方行うこと。
+・firebase hostingは反映に時間がかかることがある。
+・firebase hostingをする前に、npm buildが必要っぽい。

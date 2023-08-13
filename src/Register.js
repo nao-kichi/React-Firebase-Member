@@ -12,7 +12,6 @@ const Register = () => {
     const [registerUsername, setRegisterUsername] = useState("");
     const [registerImage, setRegisterImage] = useState(null);
 
-    // zipcode API
     const [zipCode, setZipCode] = useState('');
     const [prefecture, setPrefecture] = useState('');
     const [city, setCity] = useState('');
@@ -24,7 +23,6 @@ const Register = () => {
     };
 
     const handleSearchAddress = () => {
-        // 正規表現を使用して半角英数字7桁のみのバリデーションを行う
         const isValidZipCode = /^[0-9A-Za-z]{7}$/.test(zipCode);
 
         if (isValidZipCode) {
@@ -34,11 +32,9 @@ const Register = () => {
                 .then((response) => {
                     const { data } = response;
 
-                    // APIレスポンスから住所情報を取得
                     const { results } = data;
                     const { address1, address2, address3 } = results[0];
 
-                    // 取得した住所情報をフォームにセット
                     setPrefecture(address1);
                     setCity(address2);
                     setStreetAddress(address3);
@@ -51,13 +47,11 @@ const Register = () => {
         }
     };
 
-    // image登録
     const handleImageChange = (e) => {
         const image = e.target.files[0];
         setRegisterImage(image);
     };
 
-    // 登録画面
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -72,7 +66,6 @@ const Register = () => {
                 registerEmail,
                 registerPassword
             );
-            // eslint-disable-next-line
             const userRef = await addDoc(collection(db, "users"), {
                 user_id: userCredential.user.uid,
                 email: registerEmail,
@@ -84,7 +77,6 @@ const Register = () => {
                 streetAddress: streetAddress
             });
 
-            // ユーザーUIDに基づいて画像を保存
             if (registerImage) {
                 const storageRef = ref(storage, `user_images/${userCredential.user.uid}.jpg`);
                 setTimeout(async () => {

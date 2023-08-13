@@ -60,7 +60,6 @@ const Login = () => {
                             />
                         </div>
                         <button>ログイン</button>
-                        {/* ↓リンクを追加 */}
                         <p>新規登録は<Link to={`/register/`}>こちら</Link></p>
                     </form>
                 </>
